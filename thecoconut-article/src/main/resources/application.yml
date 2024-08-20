@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: thecoconut-article
+  cloud:
+    azure:
+      cosmos:
+        endpoint: "https://thecoconut-cosmos-nosql.documents.azure.com:443/"
+        database: "thecoconut-db"
+
+server:
+  servlet:
+    contextPath: "/thecoconut/api/"
