@@ -4,9 +4,14 @@ spring:
   cloud:
     azure:
       cosmos:
+        key: <your key>
         endpoint: "https://thecoconut-cosmos-nosql.documents.azure.com:443/"
         database: "thecoconut-db"
 
 server:
+  port: 8080
   servlet:
     contextPath: "/thecoconut/api/"
+
+springdoc:
+  version: 0.1
