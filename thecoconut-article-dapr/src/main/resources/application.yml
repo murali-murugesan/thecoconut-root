@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: thecoconut-article
+
+server:
+  port: 8080
+  servlet:
+    contextPath: "/thecoconut/api/"
+
+springdoc:
+  version: 0.1

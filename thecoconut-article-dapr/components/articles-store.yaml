@@ -1,0 +1,21 @@
+apiVersion: dapr.io/v1alpha1
+kind: Component
+metadata:
+  name: statestore
+  namespace: production
+spec:
+  type: state.azure.cosmosdb
+  version: v1
+  metadata:
+    - name: url
+      value: "https://thecoconut-cosmos-nosql.documents.azure.com:443/"
+    - name: masterKey
+      value: <your key>
+    - name: database
+      value: "thecoconut-db"
+    - name: collection
+      value: "thecoconut-articles-state-dapr"
+    # - name: actorStateStore
+    #   value: "true"
+    - name: partitionKey
+      value: "/partitionKey"

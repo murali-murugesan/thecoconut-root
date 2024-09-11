@@ -10,6 +10,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>thecoconut-article</module>
+        <module>thecoconut-article-dapr</module>
     </modules>
 
     <properties>
